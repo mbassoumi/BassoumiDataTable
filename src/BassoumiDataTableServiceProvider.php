@@ -15,5 +15,6 @@ class BassoumiDataTableServiceProvider extends ServiceProvider
     public function register()
     {
 
+
     }
 }

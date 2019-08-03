@@ -17,7 +17,6 @@
         },
         "autoload-dev": {
             "psr-4": {
-                "Bassoumi\\BassoumiDataTable\\Tests\\": "tests"
             }
         }
     },
