@@ -1,6 +1,6 @@
 <?php
 
-namespace MyVendor\BassoumiDataTable;
+namespace Bassoumi\BassoumiDataTable;
 
 use Illuminate\Support\ServiceProvider;
 

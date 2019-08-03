@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MyVendor\BassoumiDataTable\Classes;
+namespace Bassoumi\BassoumiDataTable\Classes;
 ;
 
 
