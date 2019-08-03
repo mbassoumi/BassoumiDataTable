@@ -1,0 +1,16 @@
+{
+    "name": "MyVendor/BassoumiDataTable",
+    "description": "Easy way to use datatable",
+    "authors": [
+        {
+            "name": "majdbassoumi",
+            "email": "mbbassoumi@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MyVendor\\Contactform\\": "src/"
+        }
+    }
+}
