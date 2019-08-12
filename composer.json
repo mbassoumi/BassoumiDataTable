@@ -14,10 +14,6 @@
     "autoload": {
         "psr-4": {
             "Bassoumi\\BassoumiDataTable\\": "src/"
-        },
-        "autoload-dev": {
-            "psr-4": {
-            }
         }
     },
     "extra": {
