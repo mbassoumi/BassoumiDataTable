@@ -45,6 +45,10 @@ abstract class BassoumiDataTable
 
     public final function run()
     {
+        $request = \request();
+        if ($request->wantsJson()){
+            return $this->data($request);
+        }
 
         $headings = $this->getHeaders();
 
@@ -90,7 +94,7 @@ abstract class BassoumiDataTable
         return $headers;
     }
 
-    public final function data(Request $request)
+    private final function data(Request $request)
     {
 
         list($order, $searches, $page, $length, $draw) = $this->getDataTableParams($request);
