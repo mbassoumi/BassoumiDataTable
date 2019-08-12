@@ -23,6 +23,9 @@ abstract class BassoumiDataTable
 
     protected $popup = false;
 
+    protected $resourceClass = null;
+
+
 
     public function __construct()
     {
@@ -94,7 +97,7 @@ abstract class BassoumiDataTable
         $query = $this->addDataTableFilters($searches, $this->query());
         $query = $this->addDataTableOrder($order, $query);
         $query = $query->paginate($length, '*', "page", $page);
-        $data = \App\Http\Resources\UserResource::collection($query);
+        $data = $this->resourceClass::collection($query);
         $total = $query->total();
         $additionalDataForDatatable = [
             'draw' => $draw,
