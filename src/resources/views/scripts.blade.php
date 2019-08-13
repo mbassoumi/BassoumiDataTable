@@ -10,12 +10,8 @@
             scrollX: true,
             scrollY: "500px",
             scrollCollapse: true,
-            dom: 'Bfrtip',
-            // dom: 'T<"clear">lfrtip',
-            buttons: [
-                'excel',
-
-            ],
+            pageLength: "{{config('bassoumi-datatable.defaultPageLength')}}",
+{{--            lengthMenu:  {{config('bassoumi-datatable.lengthMenu')}},--}}
             ajax: {
                 url: '{!! $table_ajax !!}',
                 dataSrc: 'data',
@@ -64,9 +60,10 @@
         $('#{!! $table_id !!} tbody').on('click', 'tr', function () {
             table.$('tr.selected').removeClass('selected');
             $(this).addClass('selected');
+            $('.sorting_1').removeClass();
             var data = $('#{!! $table_id !!}').DataTable().row(this).data();
-            $('#popup_entry').load(data.popup_url);
-            $("#popup_modal").modal();
+            $('#data_table_popup_entry').load(data.popup_url);
+            $("#data_table_popup_modal").modal();
         });
         @endif
 

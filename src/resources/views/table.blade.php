@@ -25,14 +25,16 @@
     </div>
 </div>
 
+@include('bassoumi_data_table::datatable_popup')
+
 @include('bassoumi_data_table::scripts')
 
 
 <style>
     .datatable-header {
-        color: #333;
-        background-color: #00acd6;
-        border-color: #ddd;
+        color: {{config('bassoumi-datatable.style.header-text-color')}};
+        background-color: {{config('bassoumi-datatable.style.header-background-color')}};
+        border-color: {{config('bassoumi-datatable.style.header-border-color')}};
         padding: 5px;
         border-bottom: 1px solid transparent;
         border-top-left-radius: 3px;
