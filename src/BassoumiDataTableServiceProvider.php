@@ -8,11 +8,11 @@ class BassoumiDataTableServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+
         $this->loadViewsFrom(__DIR__.'/resources/views', 'bassoumi_data_table');
 
         $this->publishes([
-            __DIR__.'/resources/views' => base_path('resources/views/vendor/bassoumi'),
+            __DIR__.'/resources/views' => resource_path('views/vendor/bassoumi_data_table'),
         ]);
 
         $this->publishes([
@@ -23,6 +23,9 @@ class BassoumiDataTableServiceProvider extends ServiceProvider
     public function register()
     {
 
+        $this->mergeConfigFrom(
+            __DIR__.'/config/bassoumi-datatable.php', 'bassoumi-datatable'
+        );
 
     }
 }

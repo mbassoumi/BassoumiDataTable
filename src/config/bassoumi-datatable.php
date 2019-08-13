@@ -9,5 +9,6 @@ return [
         'header-background-color' => '#00acd6',
         'header-text-color' => '#333',
         'header-border-color' => '#ddd',
+        'selected-row-background-color' => '#00acd6',
     ],
 ];

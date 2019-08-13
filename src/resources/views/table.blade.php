@@ -41,6 +41,10 @@
         border-top-right-radius: 3px;
     }
 
+    tr.selected {
+        background-color: {{config('bassoumi-datatable.style.selected-row-background-color')}} !important;
+    }
+
     .form-filter {
         border-radius: 4px;
     }
