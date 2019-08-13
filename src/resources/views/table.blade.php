@@ -1,7 +1,11 @@
 <div class="container" style="width: 100%">
     <div class="panel panel-default">
         {{--        <div class="panel-heading datatable-header">Panel Heading</div>--}}
-        <div class="datatable-header"><h4><b>{!! $datatable_name !!}</b></h4></div>
+        <div class="datatable-header">
+            <h4>
+                <b>{!! $datatable_name !!}</b>
+            </h4>
+        </div>
         <div class="panel-body">
 
 
@@ -47,5 +51,9 @@
 
     .form-filter {
         border-radius: 4px;
+    }
+
+    .datatable-header h4 {
+        text-align: center;
     }
 </style>
